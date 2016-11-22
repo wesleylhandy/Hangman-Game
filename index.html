@@ -8,6 +8,9 @@
 	<!--Font Awesome-->
     <script src="https://use.fontawesome.com/5f1f3cb4d3.js"></script>
 
+	<!--custom JS-->
+    <script src="assets/javascript/game.js"></script>
+
 	<title>Hangman - Guess the Word</title>
 
 	<!--Meyer Reset-->
@@ -25,13 +28,69 @@
 </head>
 <body>
 
-    <footer class = "footer text-center">
+	<nav class="navbar navbar-default">
+
+        <div class="container">
+
+        	<div class = "row">
+
+        		<div class = "col-xs-11 col-sm-9 col-md-9 col-lg-9">
+
+          			<div class="navbar-header">
+            			<a class="navbar-brand" href="#game"><img alt="Brand" src="assets/images/calculator.png"></a>
+          			</div>
+          			<h1>Hangman</h2>
+
+          		</div>
+
+          		<div class = "col-xs-11 col-xs-offset-0 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
+            		<ul class="nav navbar-nav">
+            			<li><a href="#about">About</a></li>
+            		</ul>
+            	</div>
+            </div>
+          
+        </div>
+    </nav>
+
+	<div class = "container" id = "game">
+		<div class = "row">
+			<div class = "panel panel-default">
+				<div class = "col-xs-12 col-sm-8 col-md-9 col-lg-9">
+					<div class = "row">
+						<div class = "well col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "hangman">
+						</div>
+						<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class = "blanks"></p>
+						</div>
+						<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p class = "remaining"></p>
+						</div>
+						<div class = "col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+							<p class = "alerts"></p>
+						</div>
+						<div class = "col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-6">
+							<div class = "endGame"></div>
+						</div>
+					</div>
+					<div class = "row">
+						<button class = "btn btn-primary" id="startButton" onclick="startGame();">Start Game</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div class = "col-xs-12 col-sm-12 col-md-2 col-lg-2">
+				<div class = "terms">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class = "footer text-center" id = "about">
       <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i>2016 Wesley L. Handy</p>
       <a href="https://github.com/wesleylhandy/rps"><i class="fa fa-github" aria-hidden="true"></i></a>
     </footer>
-
-
-    <script src="javascript/game.js"></script>
 
 </body>
 </html>
