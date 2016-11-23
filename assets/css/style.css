@@ -1,25 +1,96 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
+	color: #44807A;
 	font-family: 'Biryani', sans-serif;
 	font-size: 125%;
+	background-image: url(../images/old_mathematics/old_mathematics.png);
 }
 
-.navbar-brand {
-	height: 4.5em;
-	padding-top: 0.25em
-}
-
-.navbar-brand img {
-	height: 3.5em;
-}
-
-.navbar .navbar-default .h1 {
-	margin-top: 1.5em;
+#game {
+	margin-top: 2em;
 }
 
 .guessed {
-	color: #fff;
+	color: #333;
 }
 
 .available {
-	color: #000;
+	color: #ffe5d2;
+}
+
+.central {
+	background-image: url(../images/congruent_outline.png);
+	font-size: 300%;
+	color: #ffe5d2;
+	border: 2px solid #44807A;
+}
+
+.hangman {
+	height: 200px;
+	width: 75px;
+	overflow-x: hidden;
+	position: relative;
+}
+
+#gameStatus {
+	position: absolute;
+	left: 0px;
+}
+
+.alerts, .remaining {
+	font-size: 50%;
+}
+
+.alerts, .main {
+	color: #ce976e;
+}
+
+.btn, .btn-primary, .btn-primary:active, .btn-primary:focus {
+	color: #ffe5d2;
+	background-color: #44807A;
+	border-color: #13524b;
+}
+
+.btn-primary:hover {
+	color: #ffe5d2;
+	border-color: #286962;
+	background-color: #699994;
+}
+
+h4 {
+	text-decoration: underline;
+}
+
+.footer {
+
+  padding-top: 0.5em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 6em;
+  color: #333;
+  background-color: #ce976e;
+  border-top-style: solid;
+  border-top-color: #44807A;
+  border-top-width: .325em;
+}
+
+.footer a:link {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+
+.footer a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.footer a:hover {
+    filter: drop-shadow(0.063em 0.063em 0em #44807A);
 }

@@ -28,68 +28,61 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default">
-
-        <div class="container">
-
-        	<div class = "row">
-
-        		<div class = "col-xs-11 col-sm-9 col-md-9 col-lg-9">
-
-          			<div class="navbar-header">
-            			<a class="navbar-brand" href="#game"><img alt="Brand" src="assets/images/calculator.png"></a>
-          			</div>
-          			<h1>Hangman</h2>
-
-          		</div>
-
-          		<div class = "col-xs-11 col-xs-offset-0 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
-            		<ul class="nav navbar-nav">
-            			<li><a href="#about">About</a></li>
-            		</ul>
-            	</div>
-            </div>
-          
-        </div>
-    </nav>
-
 	<div class = "container" id = "game">
 		<div class = "row">
-			<div class = "panel panel-default">
-				<div class = "col-xs-12 col-sm-8 col-md-9 col-lg-9">
-					<div class = "row">
-						<div class = "well col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "hangman">
-						</div>
-						<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<div class = "blanks"></p>
-						</div>
-						<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<p class = "remaining"></p>
-						</div>
-						<div class = "col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
-							<p class = "alerts"></p>
-						</div>
-						<div class = "col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-6">
-							<div class = "endGame"></div>
+			
+			<div class = "col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				<div class = "row well central">
+					<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+						<div class = "hangman center-block">
+							<img class = "rounded" src = "assets/images/hangman.png" id="gameStatus">
 						</div>
 					</div>
-					<div class = "row">
-						<button class = "btn btn-primary" id="startButton" onclick="startGame();">Start Game</button>
+					<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class = "main text-center">
+							<p class = "blanks"><span style="text-decoration: underline">h a n g m a n</span></p>
+						</div>
+					</div>
+					<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class = "letters text-center">
+							<p class = "remaining">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+						</div>
+					</div>
+					<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class = "message text-center">
+							<p class = "alerts">Math or Maths, you be the judge!</p>
+						</div>
+					</div>
+					<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<button class = "btn btn-primary center-block" id="startButton" onclick="startGame();">Start Game</button>
 					</div>
 				</div>
 			</div>
 
-
-			<div class = "col-xs-12 col-sm-12 col-md-2 col-lg-2">
-				<div class = "terms">
+			<div class = "col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<div class = "row">
+					<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class = "rules">
+							<h2>How to Play:</h2>
+							<ul>
+								<li><span class = "glyphicon glyphicon-chevron-up"></span>Click Button to Begin</li>
+								<li><span class = "glyphicon glyphicon-chevron-up"></span>Use Keyboard to Submit Guesses</li>
+								<li><span class = "glyphicon glyphicon-chevron-up"></span>Check Console for Hints</li>
+								<li><span class = "glyphicon glyphicon-chevron-up"></span>Wrong Guesses Hurt</li>
+							</ul>
+						</div>
+					</div>
+					<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class = "endGame"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	
 	<footer class = "footer text-center" id = "about">
       <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i>2016 Wesley L. Handy</p>
-      <a href="https://github.com/wesleylhandy/rps"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://github.com/wesleylhandy/Hangman-Game"><i class="fa fa-github" aria-hidden="true"></i></a>
     </footer>
 
 </body>
