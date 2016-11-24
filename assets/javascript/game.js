@@ -133,7 +133,7 @@ var hangmanGame = {
 			type: "txt",
 			clue: "Möbius Strips, Klein Bottles, knots and other interesting physical things",
 			used: false,
-			site: '<iframe width="100%" src="https://www.youtube.com/embed/zzKGnuvX6IQ?list=PLt5AfwLFPxWI9eDSJREzp1wvOJsjt23H_" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/W18FDEA1jRQ?list=PLt5AfwLFPxWJeBhzCJ_JXdaIXi_YJl7Bh" frameborder="0" allowfullscreen></iframe>'
 		}
 	],
 	sounds: {
@@ -163,7 +163,7 @@ var hangmanGame = {
 		},
 		lose: {
 			sound: new Howl({
-				scr: ['assets/sounds/no-thats-not-gonna-do-it.wav']
+				src: ['assets/sounds/losingSound.wav']
 			}),
 			volume: 0.25
 		}
@@ -257,7 +257,8 @@ var hangmanGame = {
 	},
 	//checks that user hasn't reused a previous guess, for now there is no penalty
 	checkForDuplicate: function() {
-		if (this.blanks.indexOf(this.userGuess) > -1) {
+		if ((this.blanks.indexOf(this.userGuess) > -1) 
+			|| (this.usedLetters.indexOf(this.userGuess) > -1)) {
 			this.sounds.dupe.sound.play();
 			return false;
 		} else { 
@@ -281,7 +282,9 @@ var hangmanGame = {
 				this.hangmanPosition-=75;
 				document.querySelector('#gameStatus').style.left = this.hangmanPosition + 'px';
 				//play an annoying sound
-				this.sounds.missed.sound.play();
+				if (this.usedGuesses < 6) {
+					this.sounds.missed.sound.play();
+				}
 
 				if (this.usedGuesses > 3) {
 					//should we give nonDev's a visible clue?
@@ -308,7 +311,8 @@ var hangmanGame = {
 			//display used terms - in process
 
 			//play losing sound
-			this.sounds.lose.sound.play();
+			var id1 = this.sounds.lose.sound.play();
+			this.sounds.lose.sound.rate(0.75, id1);
 
 			//use querySelector to change text of button to Play Again?
 			document.querySelector("#startButton").innerHTML = "Play Again?";
