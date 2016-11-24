@@ -355,6 +355,7 @@ var startGame = function() {
 	hangmanGame.reset();
 	hangmanGame.gameOn = true;
 	hangmanGame.getRandomTerm();
+	document.getElementById("dummy").focus();
 		
 	//use querySelector to change content of start button to Start Over
 	document.querySelector("#startButton").innerHTML = "Start Over";
@@ -376,11 +377,5 @@ document.onkeyup = function(event) {
 				hangmanGame.checkIfCorrect();
 				hangmanGame.checkForEndGame();
 		}
-	}
-}
-
-document.onclick = function(event) {
-	if (hangmanGame.gameOn) {
-		document.getElementById("dummy").focus();
 	}
 }
