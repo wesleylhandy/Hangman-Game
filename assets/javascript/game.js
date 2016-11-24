@@ -139,28 +139,33 @@ var hangmanGame = {
 	sounds: {
 		dupe: {
 			sound: new Howl({ 
-				src: ['../sounds/NFF-zing.wav']
-			})
+				src: ['assets/sounds/NFF-zing.wav']
+			}),
+			volume: 0.25
 		},
 		missed: {
 			sound: new Howl({
-				src: ['../sounds/NFF-wrong-move.wav']
-			})
+				src: ['assets/sounds/NFF-wrong-move.wav']
+			}),
+			volume: 0.25
 		},
 		correct: {
 			sound: new Howl({
-				src: ['../sounds/cling_1.wav']
-			})
+				src: ['assets/sounds/cling_1.wav']
+			}),
+			volume: 0.25
 		},
 		win: {
 			sound: new Howl({
-				src: ['../sounds/crowd-cheering-1.mp3']
-			})
+				src: ['assets/sounds/crowd-cheering-1.mp3']
+			}),
+			volume: 0.25
 		},
 		lose: {
 			sound: new Howl({
-				scr: ['../sounds/no-thats-not-gonna-do-it.wav']
-			})
+				scr: ['assets/sounds/no-thats-not-gonna-do-it.wav']
+			}),
+			volume: 0.25
 		}
 	},
 	hangmanPosition: 0,
@@ -316,7 +321,8 @@ var hangmanGame = {
 			//display used terms - in process
 
 			//play winning sound
-			this.sounds.win.sound.play();
+			var id1 = this.sounds.win.sound.play();
+			this.sounds.win.sound.fade(0.5, 0, 4000, id1);
 
 			//display endgame video
 			document.querySelector(".endGame").innerHTML = "<h4>Watch this :</h4>" + this.currentTerm.site;
