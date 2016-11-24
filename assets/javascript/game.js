@@ -1,3 +1,4 @@
+//game as an object
 var hangmanGame = {
 
 	words : [
@@ -135,6 +136,33 @@ var hangmanGame = {
 			site: '<iframe width="100%" src="https://www.youtube.com/embed/zzKGnuvX6IQ?list=PLt5AfwLFPxWI9eDSJREzp1wvOJsjt23H_" frameborder="0" allowfullscreen></iframe>'
 		}
 	],
+	sounds: {
+		dupe: {
+			sound: new Howl({ 
+				src: ['../sounds/NFF-zing.wav']
+			})
+		},
+		missed: {
+			sound: new Howl({
+				src: ['../sounds/NFF-wrong-move.wav']
+			})
+		},
+		correct: {
+			sound: new Howl({
+				src: ['../sounds/cling_1.wav']
+			})
+		},
+		win: {
+			sound: new Howl({
+				src: ['../sounds/crowd-cheering-1.mp3']
+			})
+		},
+		lose: {
+			sound: new Howl({
+				scr: ['../sounds/no-thats-not-gonna-do-it.wav']
+			})
+		}
+	},
 	hangmanPosition: 0,
 	currentTerm: {},
 	letterArray : [],
@@ -225,7 +253,7 @@ var hangmanGame = {
 	//checks that user hasn't reused a previous guess, for now there is no penalty
 	checkForDuplicate: function() {
 		if (this.blanks.indexOf(this.userGuess) > -1) {
-			//play beep and display "Letter Already Guessed"
+			this.sounds.dupe.sound.play();
 			return false;
 		} else { 
 			return true;
@@ -239,6 +267,7 @@ var hangmanGame = {
 					if (this.letterArray[x] === this.userGuess) {
 						this.blanks[x] = this.userGuess;
 						//play a pleasant sound
+						this.sounds.correct.sound.play();
 					}
 				}
 			} else {
@@ -247,6 +276,7 @@ var hangmanGame = {
 				this.hangmanPosition-=75;
 				document.querySelector('#gameStatus').style.left = this.hangmanPosition + 'px';
 				//play an annoying sound
+				this.sounds.missed.sound.play();
 
 				if (this.usedGuesses > 3) {
 					//should we give nonDev's a visible clue?
@@ -272,6 +302,9 @@ var hangmanGame = {
 			document.querySelector(".alerts").innerHTML = "Sorry, you lose. The correct answer was: " + this.currentTerm.word;
 			//display used terms - in process
 
+			//play losing sound
+			this.sounds.lose.sound.play();
+
 			//use querySelector to change text of button to Play Again?
 			document.querySelector("#startButton").innerHTML = "Play Again?";
 		} else if (blanksCheck === lettersCheck) {
@@ -281,6 +314,9 @@ var hangmanGame = {
 			//display you win with winning sound/image
 			document.querySelector(".alerts").innerHTML = "Good Job. You got it right!";
 			//display used terms - in process
+
+			//play winning sound
+			this.sounds.win.sound.play();
 
 			//display endgame video
 			document.querySelector(".endGame").innerHTML = "<h4>Watch this :</h4>" + this.currentTerm.site;
@@ -324,8 +360,7 @@ document.onkeyup = function(event) {
   				hangmanGame.checkIfCorrect();
 				hangmanGame.checkForEndGame();
   		} else if ( (hangmanGame.currentTerm.type === "num")
-  			&& (  ((event.keyCode > 95) && (event.keyCode < 106))
-			|| ((event.keyCode > 47) && (event.keyCode < 58)) ) ) {
+  			&& ((event.keyCode > 47) && (event.keyCode < 58)) ) {
 				hangmanGame.checkIfCorrect();
 				hangmanGame.checkForEndGame();
 		}
