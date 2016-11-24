@@ -304,6 +304,7 @@ var hangmanGame = {
 
 		if (this.usedGuesses >= this.maxGuesses) {
 			this.gameOn = false;
+			document.activeElement.blur();
 			this.losses++;
 
 			//display you lose and current term
@@ -318,6 +319,7 @@ var hangmanGame = {
 			document.querySelector("#startButton").innerHTML = "Play Again?";
 		} else if (blanksCheck === lettersCheck) {
 			this.gameOn = false;
+			document.activeElement.blur();
 			this.wins++;
 
 			//display you win with winning sound/image
@@ -351,8 +353,8 @@ var hangmanGame = {
 var startGame = function() {
 	console.log("--New Game--");
 	hangmanGame.reset();
-	hangmanGame.getRandomTerm();
 	hangmanGame.gameOn = true;
+	hangmanGame.getRandomTerm();
 		
 	//use querySelector to change content of start button to Start Over
 	document.querySelector("#startButton").innerHTML = "Start Over";
@@ -374,5 +376,11 @@ document.onkeyup = function(event) {
 				hangmanGame.checkIfCorrect();
 				hangmanGame.checkForEndGame();
 		}
+	}
+}
+
+document.onclick = function(event) {
+	if (hangmanGame.gameOn) {
+		document.getElementById("dummy").focus();
 	}
 }
