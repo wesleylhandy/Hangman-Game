@@ -356,7 +356,6 @@ var startGame = function() {
 	hangmanGame.gameOn = true;
 	hangmanGame.getRandomTerm();
 	document.getElementById("dummy").focus();
-		
 	//use querySelector to change content of start button to Start Over
 	document.querySelector("#startButton").innerHTML = "Start Over";
 }
@@ -365,6 +364,7 @@ var startGame = function() {
 document.onkeyup = function(event) {
 
 	if (hangmanGame.gameOn) {
+		
   		hangmanGame.userGuess = event.key;
   		//only allow alphabetical keys for type = txt
   		//only allow numerical keys for type = num
