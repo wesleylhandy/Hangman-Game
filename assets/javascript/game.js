@@ -6,133 +6,133 @@ var hangmanGame = {
 			type: "num",
 			clue: "March 14 is named after this special number.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/ZNiRzZ66YN0?list=PL4870492ACBDC2E7C" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/ZNiRzZ66YN0?list=PL4870492ACBDC2E7C" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "googol",
 			type: "txt",
 			clue: "Homonym for a famous search engine",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/5JOAoiX1LHA" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/5JOAoiX1LHA" frameborder="0" allowfullscreen></iframe>'
 		},
 		{	
 			word: "2.71828183",
 			type: "num",
 			clue: "Apert's middle name, named after Euler.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/seUU2bZtfgM?list=PLt5AfwLFPxWJm_xYEUbnOi0foDNp2dwEX" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/seUU2bZtfgM?list=PLt5AfwLFPxWJm_xYEUbnOi0foDNp2dwEX" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "1.61803398",
 			type: "num",
 			clue: "Fibonacci's favorite number.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/D8ntDpBm6Ok?list=PLt5AfwLFPxWIDalIezb351yUymQhXaRv-" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/D8ntDpBm6Ok?list=PLt5AfwLFPxWIDalIezb351yUymQhXaRv-" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "zero",
 			type: "txt",
 			clue: "Can you really say this actually exists?",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/8t1TC-5OLdM?list=PLt5AfwLFPxWLNZRKWlcRmTABh_SExiiCj" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/8t1TC-5OLdM?list=PLt5AfwLFPxWLNZRKWlcRmTABh_SExiiCj" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "infinity",
 			type: "txt",
 			clue: "Great in theory, but you can't actually get there in reality.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/dDl7g_2x74Q" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/dDl7g_2x74Q" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "binary",
 			type: "txt",
 			clue: "There are only 10 types of people in the world, those who can read this and those who can't.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/umYvFdU54Po" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/umYvFdU54Po" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "fermat's last theorem",
 			type: "txt",
 			clue: "Somehow Homer Simpson knew something about this.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/qiNcEguuFSA?list=PLt5AfwLFPxWLD3KG-XZQFTDFhnZ3GHMlW" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/qiNcEguuFSA?list=PLt5AfwLFPxWLD3KG-XZQFTDFhnZ3GHMlW" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "calculus",
 			type: "txt",
 			clue: "Now, was it Newton or Leibniz...",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/shEk8sz1oOw" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/shEk8sz1oOw" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "geometry",
 			type: "txt",
 			clue: "It's amazing what you can do with a compass and a straight edge",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/6Lm9EHhbJAY" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/6Lm9EHhbJAY" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "pythagorean theorem",
 			type: "txt",
 			clue: "Why two shorter flights always take longer than one nonstop flight.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/ItiFO5y36kw" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/ItiFO5y36kw" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "dimensions",
 			type: "txt",
 			clue: "Our universe only has three of them",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/2s4TqVAbfz4" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/2s4TqVAbfz4" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "polygon",
 			type: "txt",
 			clue: "Shapes, shapes, shapes everywhere!!!",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/87uo2TPrsl8" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/87uo2TPrsl8" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "imaginary numbers",
 			type: "txt",
 			clue: "They have more real world applications than their name implies.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/NGMRB4O922I" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/NGMRB4O922I" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "square root",
 			type: "txt",
 			clue: "Describes the relationship of ff to fe01.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/5sKah3pJnHI" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/5sKah3pJnHI" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "quadratic equation",
 			type: "txt",
 			clue: "Curves and Parabolas can be represented thusly.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/uCsD3ZGzMgE" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/uCsD3ZGzMgE" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "prime numbers",
 			type: "txt",
 			clue: "These pesky numbers refused to be factored like the rest.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/2JM2oImb9Qg?list=PL0D0BD149128BB06F" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/2JM2oImb9Qg?list=PL0D0BD149128BB06F" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "set theory",
 			type: "txt",
 			clue: "How we know the sum of all natural numbers is -1/12.",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/w-I6XTVZXww" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/w-I6XTVZXww" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
 			word: "topology",
 			type: "txt",
 			clue: "Möbius Strips, Klein Bottles, knots and other interesting physical things",
 			used: false,
-			site: '<iframe width="280" height="158" src="https://www.youtube.com/embed/zzKGnuvX6IQ?list=PLt5AfwLFPxWI9eDSJREzp1wvOJsjt23H_" frameborder="0" allowfullscreen></iframe>'
+			site: '<iframe width="100%" src="https://www.youtube.com/embed/zzKGnuvX6IQ?list=PLt5AfwLFPxWI9eDSJREzp1wvOJsjt23H_" frameborder="0" allowfullscreen></iframe>'
 		}
 	],
 	hangmanPosition: 0,

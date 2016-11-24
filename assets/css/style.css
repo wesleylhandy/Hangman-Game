@@ -1,6 +1,6 @@
 html {
-  position: relative;
-  min-height: 100%;
+	position: relative;
+  	min-height: 100%;
 }
 
 body {
@@ -8,6 +8,7 @@ body {
 	font-family: 'Biryani', sans-serif;
 	font-size: 125%;
 	background-image: url(../images/old_mathematics/old_mathematics.png);
+	height: 100%;
 }
 
 #game {
@@ -49,7 +50,7 @@ body {
 	color: #ce976e;
 }
 
-.btn, .btn-primary, .btn-primary:active, .btn-primary:focus {
+.btn, .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:visited {
 	color: #ffe5d2;
 	background-color: #44807A;
 	border-color: #13524b;
@@ -65,19 +66,31 @@ h4 {
 	text-decoration: underline;
 }
 
-.footer {
+.endGame {
+	padding: 1em;
+	min-height: 150px;
+	max-height: 360px;
+	margin-bottom: 2em;
+}
 
-  padding-top: 0.5em;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 6em;
-  color: #333;
-  background-color: #ce976e;
-  border-top-style: solid;
-  border-top-color: #44807A;
-  border-top-width: .325em;
+#sideBar {
+	background-image: url(../images/congruent_pentagon/congruent_pentagon.png);
+	min-height: 412px;
+	border: 2px solid #844A1F;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+  	padding-top: 0.5em;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 6em;
+	color: #333;
+	background-color: #ce976e;
+	border-top-style: solid;
+	border-top-color: #44807A;
+	border-top-width: .325em;
 }
 
 .footer a:link {
