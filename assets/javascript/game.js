@@ -122,9 +122,9 @@ var hangmanGame = {
 			site: '<iframe width="100%" src="https://www.youtube.com/embed/2JM2oImb9Qg?list=PL0D0BD149128BB06F" frameborder="0" allowfullscreen></iframe>'
 		},
 		{
-			word: "set theory",
+			word: "infinite series",
 			type: "txt",
-			clue: "How we know the sum of all natural numbers is -1/12.",
+			clue: "{1 + 2 + 3 + 4 + ....} = -1/12.",
 			used: false,
 			site: '<iframe width="100%" src="https://www.youtube.com/embed/w-I6XTVZXww" frameborder="0" allowfullscreen></iframe>'
 		},
