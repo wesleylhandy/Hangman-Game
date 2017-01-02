@@ -1,3 +1,12 @@
+window.onload = function() {
+
+	//set date
+	var d = new Date();
+	var year = d.getFullYear();
+	document.querySelector("#year").innerHTML = year;
+
+}
+
 //game as an object
 var hangmanGame = {
 
