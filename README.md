@@ -11,3 +11,5 @@ The  Start Game Button controls when a new game begins.
 Technologies used in designing this game: 
 
 Game logic in Javascript. Icons from FontAwesome; fonts from fonts.google.com; sounds played via Howler.js; CSS styled using Bootstrap + Custom CSS. Background images from SubtlePatterns.com. Hangman image credit: http://flashbynight.com/tutes/hangmanhtml5/.
+
+View this app on [gh-pages](https://wesleylhandy.github.io/Hangman-Game/)
