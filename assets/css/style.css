@@ -9,6 +9,7 @@ body {
 	font-size: 125%;
 	background-image: url(../images/old_mathematics/old_mathematics.png);
 	height: 100%;
+	margin-bottom: 6.5em;
 }
 
 #game {
@@ -68,8 +69,7 @@ h4 {
 
 .endGame {
 	padding: 1em;
-	min-height: 150px;
-	max-height: 360px;
+	height: 36vh;
 	margin-bottom: 1em;
 }
 
@@ -112,4 +112,14 @@ h4 {
 	position:absolute;
 	left:-200px;
 	top:0px;
+}
+
+@media screen and (max-width: 990px) {
+	.endGame {
+		height: 54vh;
+	}
+
+	.video {
+		height: 300px;
+	}
 }
